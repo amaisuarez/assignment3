@@ -1,0 +1,23 @@
+{
+  "description": "Quick smoke test of the pipeline (NOT for the report)",
+  "seed": 20262027,
+  "java_opts": ["-XX:+UseSerialGC", "-Xms256m", "-Xmx4g", "--add-modules", "jdk.incubator.vector"],
+  "repetitions": 3,
+  "warmup_rules": [
+    {"max_n": 1000000, "warmups": 2}
+  ],
+  "batch_target_ms": 50,
+  "per_repetition_budget_s": 20,
+  "process_startup_allowance_s": 30,
+  "memory_budget_bytes": 2000000000,
+  "scaling": {
+    "sizes": [64, 256],
+    "threads": [1, 2, 4, 8],
+    "methods": ["static", "stream"]
+  },
+  "vector": {
+    "sizes": [256],
+    "threads": [1, 4],
+    "variants": ["novec", "auto", "vapi"]
+  }
+}
