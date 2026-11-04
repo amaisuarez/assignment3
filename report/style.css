@@ -1,0 +1,17 @@
+@page { size: A4; margin: 18mm 17mm 18mm 17mm; }
+body { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 10pt; line-height: 1.42; color: #0b0b0b; max-width: none; margin: 0; }
+header#title-block-header { text-align: center; margin-bottom: 14pt; }
+h1.title { font-size: 17pt; margin: 0 0 4pt; line-height: 1.25; }
+p.subtitle { font-size: 10.5pt; color: #52514e; margin: 0 0 4pt; }
+p.author { font-weight: 600; margin: 2pt 0; } p.date { color: #52514e; margin: 0; }
+h1 { font-size: 13pt; margin: 16pt 0 5pt; border-bottom: 1px solid #e4e3df; padding-bottom: 2pt; break-after: avoid; }
+h2 { font-size: 11pt; margin: 12pt 0 4pt; break-after: avoid; }
+p { margin: 4pt 0 6pt; text-align: justify; }
+table { border-collapse: collapse; margin: 6pt auto; font-size: 8.4pt; break-inside: avoid; }
+th, td { border-bottom: 1px solid #e4e3df; padding: 2.5pt 5pt; }
+th { border-bottom: 1.5px solid #52514e; background: #f4f3f0; }
+code { font-family: Menlo, monospace; font-size: 8.6pt; background: #f4f3f0; padding: 0 2px; border-radius: 2px; }
+figure { margin: 8pt 0; text-align: center; break-inside: avoid; }
+figure img { max-width: 92%; max-height: 8.2cm; }
+figcaption { font-size: 8.6pt; color: #52514e; text-align: left; margin: 2pt 4%; }
+ul { margin: 3pt 0 6pt; padding-left: 18pt; } li { margin: 2pt 0; }
