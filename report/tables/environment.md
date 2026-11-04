@@ -1,0 +1,12 @@
+| item | value |
+|---|---|
+| CPU | Intel(R) Core(TM) i5-5350U CPU @ 1.80GHz |
+| Physical cores / logical processors | 2 / 4 (Hyper-Threading) |
+| Caches (L1d / L2 per core, L3 shared) | 32 KiB / 256 KiB / 3 MiB |
+| SIMD | SSE, SSE2, SSE3, FMA, SSE4.1, SSE4.2, AVX1.0, AVX2 |
+| RAM | 8 GiB |
+| OS | macOS-10.16-x86_64-i386-64bit-Mach-O (Darwin 21.6.0) |
+| Java | openjdk version "21.0.6" 2025-01-21 |
+| JVM options | -XX:+UseSerialGC -Xms256m -Xmx4g --add-modules jdk.incubator.vector |
+| Power | Now drawing from 'AC Power' |
+| Affinity | No CPU affinity / pinning: macOS does not let user programs bind threads to cores, so the OS scheduler places them freely. |

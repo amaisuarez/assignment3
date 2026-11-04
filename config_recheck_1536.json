@@ -1,0 +1,43 @@
+{
+  "description": "Re-check of n = 1536 (sequential median looked inflated in the main run); run twice",
+  "seed": 20262027,
+  "java_opts": [
+    "-XX:+UseSerialGC",
+    "-Xms256m",
+    "-Xmx4g",
+    "--add-modules",
+    "jdk.incubator.vector"
+  ],
+  "repetitions": 5,
+  "warmup_rules": [
+    {
+      "max_n": 512,
+      "warmups": 5
+    },
+    {
+      "max_n": 1024,
+      "warmups": 3
+    },
+    {
+      "max_n": 1000000,
+      "warmups": 2
+    }
+  ],
+  "batch_target_ms": 100,
+  "per_repetition_budget_s": 60,
+  "process_startup_allowance_s": 30,
+  "memory_budget_bytes": 3000000000,
+  "scaling": {
+    "sizes": [
+      1536
+    ],
+    "threads": [
+      1,
+      2,
+      4
+    ],
+    "methods": [
+      "static"
+    ]
+  }
+}

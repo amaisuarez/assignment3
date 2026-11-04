@@ -1,0 +1,50 @@
+{
+  "timestamp_utc": "2026-11-04T16:37:11.545283+00:00",
+  "hostname": "MacBook-Air-de-Amai-2.local",
+  "os": "macOS-10.16-x86_64-i386-64bit-Mach-O",
+  "kernel": "21.6.0",
+  "cpu": {
+    "logical_processors": 4,
+    "model": "Intel(R) Core(TM) i5-5350U CPU @ 1.80GHz",
+    "physical_cores": 2,
+    "hw.l1dcachesize": "32768",
+    "hw.l2cachesize": "262144",
+    "hw.l3cachesize": "3145728",
+    "hw.cpufrequency": "1800000000",
+    "machdep.cpu.thread_count": "4",
+    "machdep.cpu.core_count": "2",
+    "simd_features": [
+      "SSE",
+      "SSE2",
+      "SSE3",
+      "FMA",
+      "SSE4.1",
+      "SSE4.2",
+      "AVX1.0",
+      "AVX2"
+    ],
+    "power_source": [
+      "Now drawing from 'AC Power'"
+    ]
+  },
+  "ram_bytes": 8589934592,
+  "python": {
+    "implementation": "CPython",
+    "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:09:21) [Clang 14.0.6 ]",
+    "executable": "/opt/anaconda3/bin/python3"
+  },
+  "numpy_version_reference_only": "2.1.3",
+  "java_version": "openjdk version \"21.0.6\" 2025-01-21\nOpenJDK Runtime Environment JBR-21.0.6+9-895.97-nomod (build 21.0.6+9-b895.97)\nOpenJDK 64-Bit Server VM JBR-21.0.6+9-895.97-nomod (build 21.0.6+9-b895.97, mixed mode, sharing)",
+  "javac_version": "javac 21.0.6",
+  "java_opts": [
+    "-XX:+UseSerialGC",
+    "-Xms256m",
+    "-Xmx4g",
+    "--add-modules",
+    "jdk.incubator.vector"
+  ],
+  "git_commit": "HEAD\nfatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'",
+  "git_dirty": true,
+  "threads_note": "The thread count p of a configuration is the number of worker threads of the pool created by the kernel (ExecutorService or ForkJoinPool); the main thread only waits. The JVM additionally runs internal threads (JIT compilers, SerialGC = 1 GC thread, housekeeping); their peak number is recorded per run (jvm_peak_thread_count). No numerical library with its own thread pool is used, and the common ForkJoinPool is not used.",
+  "affinity_note": "No CPU affinity / pinning: macOS does not let user programs bind threads to cores, so the OS scheduler places them freely."
+}
