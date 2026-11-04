@@ -1,0 +1,119 @@
+1. Known answers
+  ok    identity x M: seq
+  ok    identity x M: seq_vapi
+  ok    identity x M: static p=1
+  ok    identity x M: static p=2
+  ok    identity x M: static p=4
+  ok    identity x M: stream p=1
+  ok    identity x M: stream p=2
+  ok    identity x M: stream p=4
+  ok    identity x M: static_vapi p=1
+  ok    identity x M: static_vapi p=2
+  ok    identity x M: static_vapi p=4
+  ok    M x identity: seq
+  ok    M x identity: seq_vapi
+  ok    M x identity: static p=1
+  ok    M x identity: static p=2
+  ok    M x identity: static p=4
+  ok    M x identity: stream p=1
+  ok    M x identity: stream p=2
+  ok    M x identity: stream p=4
+  ok    M x identity: static_vapi p=1
+  ok    M x identity: static_vapi p=2
+  ok    M x identity: static_vapi p=4
+  ok    zero x M: seq
+  ok    zero x M: seq_vapi
+  ok    zero x M: static p=1
+  ok    zero x M: static p=2
+  ok    zero x M: static p=4
+  ok    zero x M: stream p=1
+  ok    zero x M: stream p=2
+  ok    zero x M: stream p=4
+  ok    zero x M: static_vapi p=1
+  ok    zero x M: static_vapi p=2
+  ok    zero x M: static_vapi p=4
+  ok    2x2 by hand: seq
+  ok    2x2 by hand: seq_vapi
+  ok    2x2 by hand: static p=1
+  ok    2x2 by hand: static p=2
+  ok    2x2 by hand: static p=4
+  ok    2x2 by hand: stream p=1
+  ok    2x2 by hand: stream p=2
+  ok    2x2 by hand: stream p=4
+  ok    2x2 by hand: static_vapi p=1
+  ok    2x2 by hand: static_vapi p=2
+  ok    2x2 by hand: static_vapi p=4
+  ok    identity 9x9 (n > lanes): seq
+  ok    identity 9x9 (n > lanes): seq_vapi
+  ok    identity 9x9 (n > lanes): static p=1
+  ok    identity 9x9 (n > lanes): static p=2
+  ok    identity 9x9 (n > lanes): static p=4
+  ok    identity 9x9 (n > lanes): stream p=1
+  ok    identity 9x9 (n > lanes): stream p=2
+  ok    identity 9x9 (n > lanes): stream p=4
+  ok    identity 9x9 (n > lanes): static_vapi p=1
+  ok    identity 9x9 (n > lanes): static_vapi p=2
+  ok    identity 9x9 (n > lanes): static_vapi p=4
+2-3. Random inputs: seq vs NumPy; every parallel run == seq bit for bit
+  ok    n=  1 seq vs NumPy: max err 0.00e+00, max allowed 3.34e-17
+  ok    n=  1 seq_vapi == seq (bitwise)
+  ok    n=  1 static      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n=  1 stream      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p
+  ok    n=  1 static_vapi p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n=  2 seq vs NumPy: max err 2.78e-17, max allowed 3.25e-16
+  ok    n=  2 seq_vapi == seq (bitwise)
+  ok    n=  2 static      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n=  2 stream      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p
+  ok    n=  2 static_vapi p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n=  3 seq vs NumPy: max err 1.11e-16, max allowed 7.14e-16
+  ok    n=  3 seq_vapi == seq (bitwise)
+  ok    n=  3 static      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n=  3 stream      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p
+  ok    n=  3 static_vapi p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n=  5 seq vs NumPy: max err 2.22e-16, max allowed 2.64e-15
+  ok    n=  5 seq_vapi == seq (bitwise)
+  ok    n=  5 static      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n=  5 stream      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p
+  ok    n=  5 static_vapi p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n=  7 seq vs NumPy: max err 4.44e-16, max allowed 6.68e-15
+  ok    n=  7 seq_vapi == seq (bitwise)
+  ok    n=  7 static      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n=  7 stream      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p
+  ok    n=  7 static_vapi p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n= 16 seq vs NumPy: max err 8.88e-16, max allowed 2.33e-14
+  ok    n= 16 seq_vapi == seq (bitwise)
+  ok    n= 16 static      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n= 16 stream      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p
+  ok    n= 16 static_vapi p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n= 37 seq vs NumPy: max err 1.33e-15, max allowed 1.04e-13
+  ok    n= 37 seq_vapi == seq (bitwise)
+  ok    n= 37 static      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n= 37 stream      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p
+  ok    n= 37 static_vapi p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n= 64 seq vs NumPy: max err 3.55e-15, max allowed 3.06e-13
+  ok    n= 64 seq_vapi == seq (bitwise)
+  ok    n= 64 static      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n= 64 stream      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p
+  ok    n= 64 static_vapi p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n=100 seq vs NumPy: max err 6.22e-15, max allowed 7.55e-13
+  ok    n=100 seq_vapi == seq (bitwise)
+  ok    n=100 static      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n=100 stream      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p
+  ok    n=100 static_vapi p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n=131 seq vs NumPy: max err 7.11e-15, max allowed 1.22e-12
+  ok    n=131 seq_vapi == seq (bitwise)
+  ok    n=131 static      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+  ok    n=131 stream      p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p
+  ok    n=131 static_vapi p=1,2,3,4,6,8 == seq (bitwise); 1 <= threads <= p; tasks = min(p, n)
+4. Repeatability of parallel runs (20 multiplications per process)
+  ok    n=128 static      p=4: 20 checksums all equal to seq (488.9169604948996)
+  ok    n=128 static      p=8: 20 checksums all equal to seq (488.9169604948996)
+  ok    n=128 stream      p=4: 20 checksums all equal to seq (488.9169604948996)
+  ok    n=128 stream      p=8: 20 checksums all equal to seq (488.9169604948996)
+  ok    n=128 static_vapi p=4: 20 checksums all equal to seq (488.9169604948996)
+  ok    n=128 static_vapi p=8: 20 checksums all equal to seq (488.9169604948996)
+6. Input generators
+  ok    dense n=16: byte-identical to the Assignment 1/2 inputs (SHA-256)
+  ok    dense n=64: byte-identical to the Assignment 1/2 inputs (SHA-256)
+
+ALL TESTS PASSED

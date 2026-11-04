@@ -1,0 +1,13 @@
+# Generated input matrices (regenerable with scripts/gen_matrices.py; SHA-256 in inputs/manifest.csv)
+data/
+# Build outputs
+java/build/
+# Python
+__pycache__/
+*.pyc
+.venv/
+# Temporary validation files
+tests/tmp/
+# Course statement (not my work)
+BD_Individual_Assignments_2026_2027.pdf
+.DS_Store
