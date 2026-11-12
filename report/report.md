@@ -480,7 +480,7 @@ SIAM, 2002, Sec. 3.5.
 
 # Reproducibility materials
 
-Repository: `https://github.com/amaisuarez/assignment3` (to be published by the author).
+Repository: `https://github.com/amaisuarez/assignment3`.
 It contains the source code (`java/`), the build script, the configuration files
 (`config.json`, `config_quick.json`, `config_recheck_1536.json`), the input
 generator and manifest, the validation report, the raw results of the main run and
